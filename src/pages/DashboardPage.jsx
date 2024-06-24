@@ -35,7 +35,7 @@ export default function Component() {
     const [stockMinimo, setStockMinimo] = useState(0);
     const [proveedorId, setProveedorId] = useState('');
 
-    const {addProvider, providers} = useProviders();
+    const {addProvider, loadProviders, providers} = useProviders();
     const [providerName, setProviderName] = useState('');
     const [providerAddress, setProviderAddress] = useState('');
     const [providerPhone, setProviderPhone] = useState('');
@@ -99,6 +99,7 @@ export default function Component() {
             correo: providerEmail,
         };
         addProvider(provider);
+        loadProviders();
         setProviderName('');
         setProviderAddress('');
         setProviderPhone('');

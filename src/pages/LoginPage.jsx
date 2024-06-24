@@ -38,6 +38,7 @@ export default function LoginPage() {
                 <Box mb={2} textAlign="center">
                     <h1 className="text-3xl font-bold">Control de inventario</h1>
                     <p>Inicia sesión para administrar el inventario de tu tienda</p>
+                    <p>Credenciales -> admin@admin:admin</p>
                 </Box>
                 <form onSubmit={handleLogin}>
                     <Box mb={2}>

@@ -29,5 +29,6 @@ export default function useProviders() {
     return {
         providers,
         addProvider,
+        loadProviders
     };
 }

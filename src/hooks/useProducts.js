@@ -64,6 +64,7 @@ export default function useProducts() {
         productStock,
         addProduct,
         updateProduct,
+        loadProducts,
         removeProduct
     };
 }

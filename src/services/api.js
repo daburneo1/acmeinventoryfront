@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://44.227.217.144:10000';
+const API_URL = 'https://acmeinventory.onrender.com'
 
 export async function updateOrder(order) {
     const response = await axios.put(`${API_URL}/pedidos/${order.id}/`, order);
